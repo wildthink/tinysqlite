@@ -22,7 +22,7 @@ Pod::Spec.new do |s|
   s.homepage         = "https://github.com/Oyvindkg/tinysqlite"
   s.license          = 'MIT'
   s.author           = { "Øyvind Grimnes" => "oyvindkg@yahoo.com" }
-  s.source           = { :git => "https://github.com/Oyvindkg/tinysqlite.git", :tag => s.version.to_s }
+  s.source           = { :git => "https://github.com/wildthink/tinysqlite.git", :tag => s.version.to_s }
 
   spec.ios.deployment_target = '8.0'
   spec.osx.deployment_target = '10.11'
