@@ -19,7 +19,7 @@ Pod::Spec.new do |s|
 #  s.description      = <<-DESC
 #                       DESC
 
-  s.homepage         = "https://github.com/Oyvindkg/tinysqlite"
+  s.homepage         = "https://github.com/wildthink/tinysqlite"
   s.license          = 'MIT'
   s.author           = { "Øyvind Grimnes" => "oyvindkg@yahoo.com" }
   s.source           = { :git => "https://github.com/wildthink/tinysqlite.git", :tag => s.version.to_s }
@@ -29,9 +29,6 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 
   s.source_files = 'Pod/Classes/**/*'
-  s.resource_bundles = {
-    'TinySQLite' => ['Pod/Assets/*.png']
-  }
-
+ 
   s.dependency 'sqlite3'
 end
