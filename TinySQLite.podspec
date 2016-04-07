@@ -1,3 +1,4 @@
+# coding: utf-8
 #
 # Be sure to run `pod lib lint TinySQLite.podspec' to ensure this is a
 # valid spec before submitting.
@@ -19,18 +20,16 @@ Pod::Spec.new do |s|
 #  s.description      = <<-DESC
 #                       DESC
 
-  s.homepage         = "https://github.com/Oyvindkg/tinysqlite"
+  s.homepage         = "https://github.com/wildthink/tinysqlite"
   s.license          = 'MIT'
   s.author           = { "Øyvind Grimnes" => "oyvindkg@yahoo.com" }
-  s.source           = { :git => "https://github.com/Oyvindkg/tinysqlite.git", :tag => s.version.to_s }
+  s.source           = { :git => "https://github.com/wildthink/tinysqlite.git", :tag => s.version.to_s }
+  s.ios.deployment_target = '8.0'
+  s.osx.deployment_target = '10.0'
 
-  s.platform     = :ios, '8.0'
   s.requires_arc = true
 
   s.source_files = 'Pod/Classes/**/*'
-  s.resource_bundles = {
-    'TinySQLite' => ['Pod/Assets/*.png']
-  }
 
   s.dependency 'sqlite3'
 end
