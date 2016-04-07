@@ -24,12 +24,14 @@ Pod::Spec.new do |s|
   s.license          = 'MIT'
   s.author           = { "Øyvind Grimnes" => "oyvindkg@yahoo.com" }
   s.source           = { :git => "https://github.com/wildthink/tinysqlite.git", :tag => s.version.to_s }
+
   s.ios.deployment_target = '8.0'
-  s.osx.deployment_target = '10.0'
+  s.osx.deployment_target = '10.10'
 
   s.requires_arc = true
 
   s.source_files = 'Pod/Classes/**/*'
 
   s.dependency 'sqlite3'
+
 end
